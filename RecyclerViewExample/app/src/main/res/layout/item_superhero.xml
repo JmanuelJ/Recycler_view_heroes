@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/md_theme_dark_onPrimaryContainer">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivSuperHero"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        tools:background="@color/md_theme_dark_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/tvSuperHeroName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="@color/md_theme_dark_background"
+        tools:text="KotlinMan"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivSuperHero"/>
+    <TextView
+        android:id="@+id/tvRealName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="JuanMa"
+        app:layout_constraintTop_toBottomOf="@+id/tvSuperHeroName"
+        app:layout_constraintStart_toEndOf="@+id/ivSuperHero"/>
+    <TextView
+        android:id="@+id/tvPublisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="JuanMa" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
